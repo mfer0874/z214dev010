@@ -1,0 +1,57 @@
+"Products": [
+ {
+    "Type": "Cleaning",
+    "Code": "10000000000",
+    "Name": "Soap",
+    "Usage": "Floors and tiles",
+    "Unit": "Box",
+    "Price": "2.90",
+    "Active": true
+},
+{
+    "Type": "Cleaning",
+    "Code": "10000000001",
+    "Name": "Detergent",
+    "Usage": "Cutterly and tableware",
+    "Unit": "Bottle",
+    "Price": "1.50",
+    "Active": true
+},
+{
+    "Type": "Cleaning",
+    "Code": "10000000002",
+    "Name": "Dishcloth",
+    "Usage": "Kitchen",
+    "Unit": "Unit",
+    "Price": "1.00",
+    "Active": true
+},
+{
+    "Type": "Cleaning",
+    "Code": "10000000003",
+    "Name": "Sponge",
+    "Usage": "Kitchen",
+    "Unit": "Package",
+    "Price": "1.50",
+    "Active": true
+},
+{
+    "Type": "Kitchen Utensils",
+    "Code": "10000000004",
+    "Name": "Food Grade Silicone",
+    "Usage": "Cooking",
+    "Unit": "Set",
+    "Price": "7.50",
+    "Active": true
+},
+{
+    "Type": "Kitchen Utensils",
+    "Code": "10000000004",
+    "Name": "Kitchen Food Tongs Stainless Steel Utility Metal Tongs 12 Inch",
+    "Usage": "Cooking",
+    "Unit": "Unit",
+    "Price": "1.00",
+    "Active": true
+}
+
+]

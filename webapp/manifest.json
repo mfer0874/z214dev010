@@ -1,0 +1,121 @@
+{
+    "_version": "1.12.0",
+
+    "sap.app": {
+        "_version": "1.12.0",
+        "id": "dev.z214dev010",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "applicationVersion": {
+            "version": "1.0.0"
+        }
+
+    },
+
+
+    "sap.ui": {
+        "_version": "1.2.0",
+        "technology": "UI5",
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+
+    },
+
+
+    "sap.ui5": {
+        "rootView": {
+            "viewName": "dev.z214dev010.view.App",
+            "type": "XML",
+            "async": true,
+            "id": "app"
+        },
+        "dependencies": {
+            "minUI5Version": "1.60",
+            "libs": {
+              "sap.m": {}
+            }
+          },
+        "models" : {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "dev.z214dev010.i18n.i18n",
+                    "supportedLocales": ["","pt"],
+                    "fallbackLocale": ""
+                },
+                "uri": "<uriRelativeToManifest>"
+            },
+            "Produto": {
+                "type": "sap.ui.model.json.JSONModel",
+                "uri": "Produtos.json"
+            }
+        },
+        "routing":{
+            "config":{
+              "routerClass": "sap.m.routing.Router",
+              "viewType": "XML",
+              "viewPath": "dev.z214dev010.view",
+              "controlId": "app",
+              "controlAggregation": "pages",
+              "transition": "slide",
+              "bypassed": {
+                  "target" : "notFound"
+              },
+              "async": true
+            },
+            "routes":[
+                {
+                    "pattern": "",
+                    "name": "principal",
+                    "target": "principal"
+                },
+                {
+                    "pattern": "detalhes/{produtosPath}",
+                    "name": "detalhes",
+                    "target": "detalhes"
+                }
+
+            ],
+            "targets":{
+                "principal": {
+                    "viewId": "principal",
+                    "viewName": "Principal",
+                    "viewLevel": 1
+                },
+                "detalhes" : {
+                    "viewId": "detalhes",
+                    "viewName": "Detalhes",
+                    "transition" : "show"
+                },
+                "notFound": {
+                    "viewId": "notFound",
+                    "viewName": "NotFound",
+                    "transition": "show"
+                }
+
+            }
+
+        },
+        "extends": {
+            "component": "<extendedComponentId>",
+			"minVersion": "<minComp1Version>",
+			"extensions": {}
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "resources": {
+        "css": [
+            {
+                "uri": "css/style.css"
+            }
+        ]
+        }
+    }
+  }
