@@ -1,8 +1,8 @@
 {
-    "_version": "1.12.0",
+    "_version": "1.21.0",
 
     "sap.app": {
-        "_version": "1.12.0",
+        "_version": "1.1.0",
         "id": "dev.z214dev010",
         "type": "application",
         "i18n": "i18n/i18n.properties",
@@ -35,9 +35,11 @@
             "id": "app"
         },
         "dependencies": {
-            "minUI5Version": "1.60",
+            "minUI5Version": "1.60.0",
             "libs": {
-              "sap.m": {}
+              "sap.ui.core": {},
+              "sap.m": {},
+              "sap.ui.layout": {}
             }
           },
         "models" : {
@@ -49,10 +51,6 @@
                     "fallbackLocale": ""
                 },
                 "uri": "<uriRelativeToManifest>"
-            },
-            "Produto": {
-                "type": "sap.ui.model.json.JSONModel",
-                "uri": "Produtos.json"
             }
         },
         "routing":{
@@ -71,26 +69,106 @@
             "routes":[
                 {
                     "pattern": "",
-                    "name": "principal",
-                    "target": "principal"
+                    "name": "home",
+                    "target": "startPage"
                 },
                 {
-                    "pattern": "detalhes/{produtosPath}",
-                    "name": "detalhes",
-                    "target": "detalhes"
+                    "pattern": "posTerminal",
+                    "name": "posTerminal",
+                    "target": "posTerminal"
+                },
+                {
+                    "pattern": "posReport",
+                    "name": "posReport",
+                    "target": "posReport"
+                },
+                {
+                    "pattern": "orderEntry",
+                    "name": "orderEntry",
+                    "target": "orderEntry"
+                },
+                {
+                    "pattern": "orderTrack",
+                    "name": "orderTrack",
+                    "target": "orderTrack"
+                },
+                {
+                    "pattern": "orderReports",
+                    "name": "orderReports",
+                    "target": "orderReports"
+                },
+                {
+                    "pattern": "products",
+                    "name": "products",
+                    "target": "products"
+                },
+                {
+                    "pattern": "customers",
+                    "name": "customers",
+                    "target": "customers"
+                },
+                {
+                    "pattern": "companySettings",
+                    "name": "companySettings",
+                    "target": "companySettings"
+                },
+                {
+                    "pattern": "salesSettings",
+                    "name": "salesSettings",
+                    "target": "salesSettings"
                 }
+
 
             ],
             "targets":{
-                "principal": {
-                    "viewId": "principal",
-                    "viewName": "Principal",
-                    "viewLevel": 1
+                "startPage": {
+                    "viewName": "StartPage",
+                    "viewLevel": 0
                 },
-                "detalhes" : {
-                    "viewId": "detalhes",
-                    "viewName": "Detalhes",
+                "posTerminal" : {
+                    "viewId": "PosTerminal",
+                    "viewName": "PosTerminal",
                     "transition" : "show"
+                },
+                "posReport": { 
+                    "viewId": "PosReport",
+                    "viewName": "PosReport",
+                    "transition": "show"
+                },
+                "orderEntry": { 
+                    "viewId": "OrderEntry",
+                    "viewName": "OrderEntry",
+                    "transition": "show"
+                },
+                "orderTrack": { 
+                    "viewId": "OrderTrack",
+                    "viewName": "OrderTrack",
+                    "transition": "show"
+                },
+                "orderReports": { 
+                    "viewId": "OrderReports",
+                    "viewName": "OrderReports",
+                    "transition": "show"
+                },
+                "products": { 
+                    "viewId": "Products",
+                    "viewName": "Products",
+                    "transition": "show"
+                },
+                "customers": { 
+                    "viewId": "Customers",
+                    "viewName": "Customers",
+                    "transition": "show"
+                },
+                "companySettings": { 
+                    "viewId": "CompanySettings",
+                    "viewName": "CompanySettings",
+                    "transition": "show"
+                },
+                "": { 
+                    "viewId": "SalesSettings",
+                    "viewName": "SalesSettings",
+                    "transition": "show"
                 },
                 "notFound": {
                     "viewId": "notFound",

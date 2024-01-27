@@ -1,0 +1,52 @@
+<mvc:View
+	controllerName="dev.z214dev010.controller.StartPage"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:layout="sap.ui.layout"
+	xmlns:microchart="sap.suite.ui.microchart">
+    <Page title="{i18n>title}">
+        <layout:VerticalLayout class="sapUiResponsiveMargin">
+            <Title
+				titleStyle="H2"
+				text="{i18n>startpageTilesGroupTitle1}"
+				class="sapUiTinyMarginBegin"/>
+            <GenericTile
+					class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+					header="{i18n>startpageTilePOSTTitle}"
+					subheader="{i18n>startpageTilePOSTSubTitle}"
+					press=".onNavToPosTerminal">
+					<tileContent>
+						<TileContent>
+							<content>
+								<NumericContent
+									scale="%"
+									value="{
+										path: 'process>/Nodes',
+										formatter: '.getProgress'
+									}"
+									icon="sap-icon://factory"/>
+							</content>
+						</TileContent>
+					</tileContent>
+				</GenericTile>
+        </layout:VerticalLayout>
+        <layout:VerticalLayout class="sapUiResponsiveMargin">
+            <Title
+				titleStyle="H2"
+				text="{i18n>startpageTilesGroupTitle2}"
+				class="sapUiTinyMarginBegin"/>
+        </layout:VerticalLayout>
+        <layout:VerticalLayout class="sapUiResponsiveMargin">
+            <Title
+				titleStyle="H2"
+				text="{i18n>startpageTilesGroupTitle3}"
+				class="sapUiTinyMarginBegin"/>
+        </layout:VerticalLayout>
+        <layout:VerticalLayout class="sapUiResponsiveMargin">
+            <Title
+				titleStyle="H2"
+				text="{i18n>startpageTilesGroupTitle4}"
+				class="sapUiTinyMarginBegin"/>
+        </layout:VerticalLayout>                
+    </Page>
+</mvc:View>
