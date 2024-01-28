@@ -19,12 +19,7 @@
 						<TileContent>
 							<content>
 								<NumericContent
-									scale="%"
-									value="{
-										path: 'process>/Nodes',
-										formatter: '.getProgress'
-									}"
-									icon="sap-icon://factory"/>
+									icon="sap-icon://cart"/>
 							</content>
 						</TileContent>
 					</tileContent>

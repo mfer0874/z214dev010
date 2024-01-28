@@ -2,6 +2,5 @@
 	controllerName="dev.z214dev010.controller.PosTerminal"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m"
-	xmlns:layout="sap.ui.layout"
-	xmlns:microchart="sap.suite.ui.microchart">
+	xmlns:layout="sap.ui.layout">
 </mvc:View>

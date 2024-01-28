@@ -1,7 +1,7 @@
 <mvc:View
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m"
-    controllerName="dev.z214dev010.controller.App"
+    controllerName="dev.z214dev010.controller.StartPage"
 	displayBlock="true">
 
 	<Shell>
