@@ -10,7 +10,7 @@ sap.ui.define([
     //     oView.placeAt("content")
     // });
  new ComponentContainer({
-     name : "dev.z214dev010",
+     name : "z214dev010",
      settings : {
          id : "z214dev010"
      } ,
